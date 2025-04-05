@@ -1,6 +1,5 @@
 import * as faceapi from "@vladmandic/face-api";
 
-// 📌 Load Models
 export const loadModels = async () => {
   console.log("📌 Loading Face-api.js models...");
 
@@ -11,7 +10,6 @@ export const loadModels = async () => {
   console.log("✅ Models Loaded Successfully!");
 };
 
-// 📌 Detect Face, Mood, Age, Gender
 export const detectFaceData = async (videoElement) => {
   const detections = await faceapi
     .detectSingleFace(videoElement, new faceapi.TinyFaceDetectorOptions())
@@ -21,7 +19,6 @@ export const detectFaceData = async (videoElement) => {
   if (detections) {
     const { expressions, age, gender } = detections;
 
-    // 🎭 Find Dominant Mood
     const mood = Object.keys(expressions).reduce((a, b) =>
       expressions[a] > expressions[b] ? a : b
     );

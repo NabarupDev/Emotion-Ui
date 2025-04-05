@@ -3,7 +3,6 @@ import { loadModels, detectFaceData } from "../utils/moodModel";
 import { Container, Typography, Paper, Box } from "@mui/material";
 import { motion } from "framer-motion"; // 🔥 Super Smooth Animations
 
-// 🔥 **Ultra-Luxury Mood Styles**
 const moodStyles = {
   happy: { background: "radial-gradient(circle, #ffcc00, #ff6600)" }, // 🟡 Golden Glow  
   sad: { background: "radial-gradient(circle, #243B55, #141E30)" }, // 🔵 Deep Space Blue  
@@ -14,7 +13,6 @@ const moodStyles = {
   disgusted: { background: "radial-gradient(circle, #4b134f, #2c3e50)" }, // ⚫ Dark Night  
 };
 
-// 🎭 **Mood Emojis**
 const moodIcons = {
   happy: "😃",
   sad: "😢",
@@ -25,7 +23,6 @@ const moodIcons = {
   disgusted: "🤢",
 };
 
-// 🎵 **Mood Music URLs**
 const moodMusic = {
   happy: "https://www.youtube.com/embed/qpIdoaaPa6U?start=39&autoplay=1",
   sad: "https://www.youtube.com/embed/sVRwZEkXepg?start=43&autoplay=1",
@@ -68,7 +65,6 @@ const WebcamCapture = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Handle music playing when mood changes
   useEffect(() => {
     if (mood !== prevMood && musicPlaying) {
       playMoodMusic();
@@ -105,7 +101,6 @@ const WebcamCapture = () => {
       }}
     >
       <Container>
-        {/* 🚀 **Futuristic Glassmorphism Card** */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -143,7 +138,6 @@ const WebcamCapture = () => {
               🚀 **Billionaire UI**
             </Typography>
 
-            {/* 🎥 **Premium Video Box** */}
             <motion.video
               ref={videoRef}
               autoPlay
@@ -161,7 +155,6 @@ const WebcamCapture = () => {
               transition={{ duration: 1 }}
             ></motion.video>
 
-            {/* 🎭 **Mood Info with Neon Glow** */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -186,7 +179,6 @@ const WebcamCapture = () => {
                 Age: {age ? age : "Detecting..."} 
               </Typography>
               
-              {/* 🎵 **Music Control** */}
               <Box sx={{ mt: 2 }}>
                 <button 
                   onClick={toggleMusic}
@@ -206,7 +198,6 @@ const WebcamCapture = () => {
                 </button>
               </Box>
               
-              {/* Hidden iframe for YouTube videos */}
               <iframe 
                 ref={iframeRef}
                 width="0" 
