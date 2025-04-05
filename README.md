@@ -26,8 +26,7 @@ Emotion UI is a cutting-edge application that uses face detection and emotion re
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/emotion-ui.git
-   cd emotion-ui/emotion-ui-frontend
+   git clone https://github.com/NabarupDev/Emotion-Ui.git
    ```
 
 2. Install dependencies:
