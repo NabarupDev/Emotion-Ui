@@ -80,6 +80,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-Your Name - [@Nabarup_Roy](https://x.com/Nabarup_Roy) - nabaruproy.dev@gmail.com
+Nabarup Roy - [@Nabarup_Roy](https://x.com/Nabarup_Roy) - nabaruproy.dev@gmail.com
 
 Project Link: [https://github.com/NabarupDev/emotion-ui](https://github.com/NabarupDev/Emotion-Ui)
